@@ -12,3 +12,16 @@
 // rowSumOddNumbers(2); // 3 + 5 = 8
 
 // SOLUTION
+function rowSumOddNumbers(n) {
+  let base = n * n - (n - 1)
+  let result = 0
+  let counter = 0
+  while (counter < n) {
+    if (base % 2 !== 0) {
+      result += base
+      counter++
+    }
+    base++
+  }
+  return result
+}

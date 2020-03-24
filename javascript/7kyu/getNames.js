@@ -9,3 +9,10 @@
 // ]
 //
 // getNames(data) // should return ['Joe', 'Bill', 'Kate']
+
+// SOLUTION
+
+function getNames(data){
+  const map = data.map(item => item.name);
+return map
+}

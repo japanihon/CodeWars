@@ -10,3 +10,15 @@
 // getRealFloor(5) == 4
 // getRealFloor(15) == 13
 // getRealFloor(-3) == -3
+
+// SOLUTION
+
+function getRealFloor(n) {
+  if (n <= 0) {
+    return n
+    } else if (n >=1 && n <= 12) {
+      return (n - 1)
+    } else {
+      return (n - 2)
+    }
+}

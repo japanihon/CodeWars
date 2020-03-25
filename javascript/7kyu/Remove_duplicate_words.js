@@ -9,3 +9,12 @@
 // Output:
 //
 // 'alpha beta gamma delta'
+
+// SOLUTION
+
+function removeDuplicateWords (s) {
+    const split = s.split(' ')
+    const removeSame = ([...new Set(split)])
+    const join = removeSame.join(' ')
+  return join
+}

@@ -5,3 +5,10 @@
 // "hel2!lo" --> 6
 // "wicked .. !" --> 6
 // "!?..A" --> 1
+
+// SOLUTION
+function countLettersAndDigits(input) {
+  const deleteSpecialsChar = input.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/\ ]/gi, '')
+  const charLeft = deleteSpecialsChar.length;
+return charLeft
+}

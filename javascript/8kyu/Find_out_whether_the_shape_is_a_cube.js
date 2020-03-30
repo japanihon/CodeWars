@@ -5,3 +5,9 @@
 // Return true if the cuboid could have equal sides, return false otherwise.
 // Return false for invalid numbers too (e.g volume or side is less than or equal to 0).
 // Note: the sides must be integers
+
+// SOLUTION
+
+var cubeChecker = function(volume, side){
+  return volume > 0 ? volume === side**3 : false;
+};

@@ -3,3 +3,12 @@
 // Example:
 // reverseWords("The greatest victory is that which requires no battle")
 // should return "battle no requires which that is victory greatest The"
+
+// SOLUTION
+
+function reverseWords(str){
+  let split = str.split(" ");
+  let reverse = split.reverse();
+  let join = reverse.join(" ")
+  return join;
+}

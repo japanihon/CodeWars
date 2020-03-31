@@ -14,3 +14,19 @@
 # I have created other katas. Have a look if you like coding and challenges.
 #
 # SOLUTION
+
+def sum_array(arr)
+  return 0 if arr == nil
+  return 0 if arr.length == 0
+
+  sortedArr = arr.sort
+
+  lower = sortedArr.shift
+  higher = sortedArr.pop
+
+  total = 0
+  for num in sortedArr do
+  puts total += num
+  end
+  return total
+end

@@ -12,3 +12,15 @@
 // Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 // I have created other katas. Have a look if you like coding and challenges.
+
+// SOLUTION
+
+function sumArray(array) {
+  if (!Array.isArray(array)) return 0;
+
+  const sort = array.sort((a, b) => a - b);
+  const slice = sort.slice(1, array.length - 1);
+  const reduce = slice.reduce((a, b) => a + b, 0);
+
+  return reduce;
+}

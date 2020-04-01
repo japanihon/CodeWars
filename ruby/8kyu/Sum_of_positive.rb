@@ -1,10 +1,14 @@
-
+# You get an array of numbers, return the sum of all of the positives ones.
+#
+# Example [1,-4,7,12] => 1 + 7 + 12 = 20
+#
+# Note: if there is nothing to sum, the sum is default to 0.
 
 
 # SOLUTION
 
 def positive_sum(arr)
-  sum = 0
+sum = 0
 i = 0
 
 while i < arr.length do
@@ -13,5 +17,7 @@ while i < arr.length do
   end
   i += 1
  end
+
 return sum
+
 end

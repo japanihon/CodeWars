@@ -7,3 +7,25 @@
 // iqTest("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
 //
 // iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
+
+// SOLUTION
+
+function iqTest(numbers) {
+  let spl = numbers.split(" ");
+  let map = spl.map(x => Number(x));
+
+  let even = [];
+  let odd = [];
+
+  for (let i = 0; i < map.length; i++) {
+    let position = map[i];
+    position % 2 === 0 ? even.push({ position, i }) : odd.push({ position, i });
+  }
+
+  if (even.length === 1) {
+    return even[0].i + 1;
+  }
+  if (odd.length === 1) {
+    return odd[0].i + 1;
+  }
+}

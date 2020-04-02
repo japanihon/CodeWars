@@ -4,3 +4,13 @@
 //
 // solution('abc') // should return ['ab', 'c_']
 // solution('abcdef') // should return ['ab', 'cd', 'ef']
+
+// SOLUTION
+
+function solution(str) {
+  let regex = /([A-Z][A-Z])/gi;
+  let spl = str.split(regex);
+  let map = spl.map(x => (x.length % 2 == 0 ? x : `${x}_`));
+  let filter = map.filter(Boolean);
+  return filter;
+}

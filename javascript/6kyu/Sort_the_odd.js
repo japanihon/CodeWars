@@ -6,3 +6,12 @@
 // Example
 //
 // sortArray([5, 3, 2, 8, 1, 4]) == [1, 3, 2, 8, 5, 4]
+
+// SOLUTION
+
+function sortArray(array) {
+  let filter = array.filter(odd => odd % 2 != 0);
+  let sort = filter.sort((x, y) => x - y);
+  let map = array.map(odd => (odd % 2 != 0 ? filter.shift() : odd));
+  return map;
+}

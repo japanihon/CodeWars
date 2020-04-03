@@ -15,3 +15,12 @@
 // Examples
 // songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
 //   // =>  WE ARE THE CHAMPIONS MY FRIEND
+
+// SOLUTION
+
+function songDecoder(song) {
+  let regex = /(WUB)+/g;
+  let replace = song.replace(regex, " ");
+  let removeBlanks = replace.trim();
+  return removeBlanks;
+}

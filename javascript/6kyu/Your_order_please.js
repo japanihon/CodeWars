@@ -8,3 +8,18 @@
 // "is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
 // "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
 // ""  -->  ""
+
+// SOLUTION
+
+function order(words) {
+  if (words === []) {
+    return words;
+  } else {
+    const spl = words.split(" ");
+    const map = spl.map(w => w.match(/\d+/));
+    const sorting = map.sort((a, b) => a[0] - b[0]);
+    const mapping = sorting.map(w => (w = w.input));
+    const join = mapping.join(" ");
+    return join;
+  }
+}

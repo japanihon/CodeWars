@@ -8,3 +8,15 @@
 // Notes
 //
 // Assertion messages may be unclear about what they display in some languages. If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
+
+// SOLUTION
+
+function duplicateEncode(word) {
+  let lowerCase = word.toLowerCase();
+  let spl = lowerCase.split("");
+  let map = spl.map((char, _, array) =>
+    array.indexOf(char) === array.lastIndexOf(char) ? "(" : ")"
+  );
+  let join = map.join("");
+  return join;
+}

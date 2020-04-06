@@ -4,3 +4,11 @@
 // toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
 //
 // toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
+
+// SOLUTION
+
+function toCamelCase(str) {
+  let regex = /[-_](.)/g;
+  let replace = str.replace(regex, (_, char) => char.toUpperCase());
+  return replace;
+}

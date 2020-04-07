@@ -9,3 +9,15 @@
 // "Indivisibilities" -> 2 # 'i' occurs seven times and 's' occurs twice
 // "aA11" -> 2 # 'a' and '1'
 // "ABBA" -> 2 # 'A' and 'B' each occur twice
+
+// SOLUTION
+
+function duplicateCount(text) {
+  let cap = text.toUpperCase();
+  let spl = cap.split("");
+  let sort = spl.sort();
+  let join = sort.join("");
+  let match = join.match(/([^])\1+/g) || [];
+  let length = match.length;
+  return length;
+}

@@ -3,3 +3,12 @@
 // flatten([1,2,3]) // => [1,2,3]
 // flatten([[1,2,3],["a","b","c"],[1,2,3]])  // => [1,2,3,"a","b","c",1,2,3]
 // flatten([[[1,2,3]]]) // => [[1,2,3]]
+
+// SOLUTION
+
+var flatten = function(array) {
+  const reducer = (accumulator, currentValue) =>
+    accumulator.concat(currentValue);
+  let reduc = array.reduce(reducer, []);
+  return reduc;
+};

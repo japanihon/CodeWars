@@ -4,3 +4,13 @@
 #
 # "hello case".camelCase() => HelloCase
 # "camel case word".camelCase() => CamelCaseWord
+
+# SOLUTION
+
+class String
+
+  def camelcase
+    self.split.map(&:capitalize).join('')
+  end
+
+end

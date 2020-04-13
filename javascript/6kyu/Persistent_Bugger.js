@@ -9,3 +9,30 @@
 //                         // 1*2*6 = 12, and finally 1*2 = 2
 //
 //  persistence(4) === 0 // because 4 is already a one-digit number
+
+// SOLUTION
+
+function persistence(numberToMultiply) {
+  let numberOfDigits = 0;
+  let numberOfOperations;
+
+  for (
+    numberOfOperations = 0;
+    numberOfDigits === 0 || numberOfDigits > 1;
+    numberOfOperations++
+  ) {
+    if (String(numberToMultiply).length === 1) {
+      break;
+    }
+
+    let putInString = String(numberToMultiply);
+    let spl = putInString.split("");
+
+    const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+    numberToMultiply = spl.reduce(reducer);
+    numberOfDigits = String(numberToMultiply).length;
+  }
+
+  return numberOfOperations;
+}

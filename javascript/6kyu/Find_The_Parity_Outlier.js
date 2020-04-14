@@ -6,3 +6,12 @@
 //
 // [160, 3, 1719, 19, 11, 13, -21]
 // Should return: 160 (the only even number)
+
+// SOLUTION
+
+function findOutlier(integers) {
+  let even = integers.filter(num => num % 2 == 0);
+  let odd = integers.filter(num => num % 2 !== 0);
+  let onlyOne = odd.length === 1 ? odd[0] : even[0];
+  return onlyOne;
+}

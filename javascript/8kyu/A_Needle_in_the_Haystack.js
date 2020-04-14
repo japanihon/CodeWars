@@ -8,3 +8,10 @@
 //
 // findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 // should return "found the needle at position 5"
+
+// SOLUTION
+
+function findNeedle(haystack) {
+  const index = haystack.findIndex(word => word === "needle");
+  return `found the needle at position ${index}`;
+}

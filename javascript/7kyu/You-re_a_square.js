@@ -17,3 +17,9 @@
 // isSquare(4) returns   true
 // isSquare(25) returns  true
 // isSquare(26) returns  false
+
+// SOLUTION
+
+var isSquare = function(n) {
+  return Number.isInteger(Math.sqrt(n));
+};

@@ -10,3 +10,9 @@
 // stringToNumber("605" ) == 605
 // stringToNumber("1405") == 1405
 // stringToNumber("-7"  ) == -7
+
+// SOLUTION
+
+var stringToNumber = function(str) {
+  return Number(str);
+};

@@ -8,3 +8,10 @@
 // basicOp('-', 15, 18)       // Output: -3
 // basicOp('*', 5, 5)         // Output: 25
 // basicOp('/', 49, 7)        // Output: 7
+
+// SOLUTION
+
+function basicOp(operation, value1, value2) {
+  const quote = value1 + operation + value2;
+  return eval(quote);
+}

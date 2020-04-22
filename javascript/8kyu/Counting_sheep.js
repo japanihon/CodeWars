@@ -11,3 +11,14 @@
 // The correct answer would be 17.
 //
 // Hint: Don't forget to check for bad values like null/undefined
+
+// SOLUTION
+
+function countSheeps(arrayOfSheep) {
+  const presentSheep = arrayOfSheep.filter(sheepIsPresent);
+  return presentSheep.length;
+}
+
+function sheepIsPresent(sheep) {
+  return sheep === true;
+}

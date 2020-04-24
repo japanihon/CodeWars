@@ -7,3 +7,10 @@
 # findSum(5) should return 8 (3 + 5)
 #
 # findSum(10) should return 33 (3 + 5 + 6 + 9 + 10)
+
+# SOLUTION
+
+def find(n)
+  numbers = [*1..n]
+  numbers.lazy.select { |n| n % 3 == 0 || n % 5 == 0 }.inject(:+)
+end

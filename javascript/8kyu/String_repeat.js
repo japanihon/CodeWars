@@ -2,3 +2,9 @@
 //
 // repeatStr(6, "I") // "IIIIII"
 // repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+// SOLUTION
+
+function repeatStr(n, s) {
+  return s.repeat(n);
+}

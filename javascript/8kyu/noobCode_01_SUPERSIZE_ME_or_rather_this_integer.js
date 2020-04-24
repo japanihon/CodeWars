@@ -4,3 +4,15 @@
 // superSize(105) // 510
 // superSize(12) // 21
 // If the argument passed through is single digit or is already the maximum possible integer, your function should simply return it.
+
+// SOLUTION
+
+function superSize(num) {
+  return parseInt(
+    num
+      .toString()
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  );
+}

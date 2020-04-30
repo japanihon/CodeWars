@@ -5,3 +5,12 @@
 # 1: -1
 # 14: -14
 # -34: 34
+
+# SOLUTION
+
+def opposite(n)
+ if n >= 0 then n = -n
+ elsif
+ n <= 0 then -n = n
+ end
+end

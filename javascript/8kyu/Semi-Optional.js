@@ -8,3 +8,11 @@
 //
 // wrappedObj.value === "MyWrappedString"
 // Unfortunately, the code is not working as designed. Please fix the code so that it behaves as specified.
+
+// SOLUTION
+
+function wrap(value) {
+  return {
+    value: value
+  };
+}

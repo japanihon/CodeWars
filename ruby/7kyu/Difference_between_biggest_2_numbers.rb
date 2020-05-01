@@ -8,3 +8,10 @@
 # You can assume that the input array must have 2 or more elements.
 #
 # The input array has the sort() method disabled, so you will have to solve it in another way.
+
+# SOLUTION
+
+def diff_big_2(arr)
+  numbers = arr.max(2)
+  numbers[0] - numbers[1]
+end

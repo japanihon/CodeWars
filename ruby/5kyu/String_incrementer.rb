@@ -15,3 +15,20 @@
 # foo099 -> foo100
 #
 # Attention: If the number has leading zeros the amount of digits should be considered.
+
+# SOLUTION
+
+def increment_string(input)
+  return "1" if input.empty?
+  arr = input.rpartition(/\D/)
+  if arr[-1].empty?
+   arr[-1] = "1"
+  else
+    arr[-1] = arr[-1].succ
+  end
+  return arr.join
+end
+
+def increment_string(input)
+  input.sub(/\d*$/) { |n| n.empty? ? 1 : n.succ }
+end

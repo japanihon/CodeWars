@@ -27,3 +27,14 @@
 # => 11 ...
 # => 1 + 1
 # => 2
+
+# SOLUTION
+
+def digital_root(n)
+  number_split = n.to_s.chars.map(&:to_i).reduce(0, :+)
+   if number_split > 10
+    new_number = number_split.to_s.chars.map(&:to_i).reduce(0, :+)
+    else
+    number_split
+  end
+end

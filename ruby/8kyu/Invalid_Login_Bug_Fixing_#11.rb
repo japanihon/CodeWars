@@ -9,3 +9,13 @@
 # Usage
 # var database = new Database();
 # database.login('Timmy', 'password');
+
+# SOLUTION
+
+def validate(username, password)
+  database=Database.new
+  if password.include?("||") || password.include?("//")
+  then 'Wrong username or password!'
+  else database.login(username,password)
+  end
+end

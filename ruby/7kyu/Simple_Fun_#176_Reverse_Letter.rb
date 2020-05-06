@@ -12,3 +12,9 @@
 # A string consists of lowercase latin letters, digits and symbols.
 #
 # [output] a string
+
+# SOLUTION
+
+def reverse_letter(string)
+  string.delete("\" & \ > < = @ ! - - _ : ; , # ~ ' / \ ` + ? . * ^ $ ( ) [ ] { } | \ [0-9] +\\").reverse
+end

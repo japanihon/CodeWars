@@ -7,3 +7,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-zip/
+
+# SOLUTION
+
+def zip first, second
+  first.zip(second).flatten
+end

@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-grep
+
+# SOLUTION
+
+def grep list, regexp
+  list.grep(regexp)
+end

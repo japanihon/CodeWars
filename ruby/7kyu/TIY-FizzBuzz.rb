@@ -5,3 +5,20 @@
 # If a letter is a upper case vowel, replace that character with "Iron Yard".
 # If a letter is a lower case vowel, replace that character with "Yard".
 # Ready?
+
+# SOLUTION
+
+def tiy_fizz_buzz(string)
+  string.chars.map { |letter|
+    case letter
+      when /[AEIOU]/
+        "Iron Yard"
+      when /[BCDFGHJKLMNPQRSTVWXYZ]/
+        "Iron"
+      when /[aeiou]/
+        "Yard"
+      else
+        letter
+    end
+  }.join
+end

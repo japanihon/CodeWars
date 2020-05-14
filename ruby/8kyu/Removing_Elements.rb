@@ -4,3 +4,11 @@
 #
 # myArr = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep', ...];
 # None of the arrays will be empty, so you don't have to worry about that!
+
+# SOLUTION
+
+def remove_every_other(arr)
+ x = 1
+ (arr.delete_at(x); x += 1) while x <= arr.size
+  return arr
+end

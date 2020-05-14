@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-find-index
+
+# SOLUTION
+
+def find_index list, &block
+  list.find_index(&block)
+end

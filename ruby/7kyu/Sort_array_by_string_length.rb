@@ -9,3 +9,9 @@
 # ["Eyes", "Glasses", "Monocles", "Telescopes"]
 #
 # All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
+
+# SOLUTION
+
+def sort_by_length(arr)
+  arr.sort_by { |array| array.length }
+end

@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-map
+
+# SOLUTION
+
+def map list, &block
+  list.map(&block)
+end

@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-min
+
+# SOLUTION
+
+def min list, &block
+  list.min(&block)
+end

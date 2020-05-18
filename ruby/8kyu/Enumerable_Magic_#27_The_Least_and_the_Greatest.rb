@@ -7,3 +7,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-minmax
+
+# SOLUTION
+
+def minmax list, &block
+  list.minmax(&block).to_a
+end

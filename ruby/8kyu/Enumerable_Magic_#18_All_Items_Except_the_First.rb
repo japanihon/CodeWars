@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-drop
+
+# SOLUTION
+
+def drop list, n
+   list.drop(n)
+end

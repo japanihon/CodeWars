@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-reject
+
+# SOLUTION
+
+def reject list, &block
+  list.reject(&block)
+end

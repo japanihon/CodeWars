@@ -10,3 +10,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-each-cons
+
+# SOLUTION
+
+def each_cons list, n
+  list.each_cons(n).map { |a| a }
+end

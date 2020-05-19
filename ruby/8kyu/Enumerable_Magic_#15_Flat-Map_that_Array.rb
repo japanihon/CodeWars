@@ -3,3 +3,9 @@
 # If you need help, here's a reference (flat_map and collect_concat are the same):
 #
 # http://www.rubycuts.com/enum-collect-concat
+
+# SOLUTION
+
+def flat_map list, &block
+  list.flat_map(&block)
+end

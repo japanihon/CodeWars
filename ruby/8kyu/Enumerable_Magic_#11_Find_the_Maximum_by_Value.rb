@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-max-by
+
+# SOLUTION
+
+def max_by list, &block
+   list.max_by(&block)
+end

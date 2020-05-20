@@ -3,3 +3,9 @@
 # If you need help, here's a reference:
 #
 # http://www.rubycuts.com/enum-sort-by
+
+# SOLUTION
+
+def sort_by list, &block
+   list.sort_by(&block)
+end

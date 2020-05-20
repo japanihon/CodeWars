@@ -5,3 +5,17 @@
 // As an added challenge, upper- and lowercase letters are considered the same character, but the function should return the correct case for the initial letter. For example, the input 'sTreSS' should return 'T'.
 //
 // If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
+
+// SOLUTION
+
+function firstNonRepeatingLetter(s) {
+  for (let i = 0; i < s.length; i++) {
+    const myRegex = s[i];
+    const newRegex = new RegExp(myRegex, "gi");
+
+    if (s.match(newRegex).length == 1) {
+      return s.match(newRegex)[0];
+    }
+  }
+  return "";
+}

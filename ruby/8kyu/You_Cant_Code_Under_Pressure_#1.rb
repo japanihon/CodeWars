@@ -1,4 +1,10 @@
-# Code as fast as you can! You need to double the integer and return it.
+=begin
+
+INSTRUCTION
+
+Code as fast as you can! You need to double the integer and return it.
+
+=end
 
 # SOLUTION
 

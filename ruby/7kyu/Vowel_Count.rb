@@ -11,7 +11,5 @@ The input string will only consist of lower case letters and/or spaces.
 # SOLUTION
 
 def getCount(inputStr)
-#   vowel = "a", "e", "i", "o", "u"
-p inputStr.scan(/[aeoui]/).count
-
+  p inputStr.scan(/[aeoui]/).count
 end

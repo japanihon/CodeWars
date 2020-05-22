@@ -1,4 +1,10 @@
-# The code does not execute properly. Try to figure out why.
+=begin
+
+INSTRUCTION
+
+The code does not execute properly. Try to figure out why.
+
+=end
 
 # SOLUTION
 

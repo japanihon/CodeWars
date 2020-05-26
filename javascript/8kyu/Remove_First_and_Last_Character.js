@@ -1,7 +1,13 @@
-// It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+/*
+
+INSTRUCTION
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+*/
 
 // SOLUTION
 
-function removeChar(str) {
+const removeChar = str => {
   return str.substring(str.length - 1, 1);
-}
+};

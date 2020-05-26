@@ -1,12 +1,17 @@
-// Complete the solution so that it reverses the string value passed into it.
-//
-// solution('world'); // returns 'dlrow'
+/*
+
+INSTRUCTION
+
+Complete the solution so that it reverses the string value passed into it.
+solution('world'); // returns 'dlrow'
+
+*/
 
 // SOLUTION
 
-function solution(str) {
+const solution = str => {
   return str
     .split("")
     .reverse()
     .join("");
-}
+};

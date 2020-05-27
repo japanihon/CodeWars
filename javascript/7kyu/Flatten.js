@@ -1,14 +1,20 @@
-// Write a function that flattens an Array of Array objects into a flat Array. Your function must only do one level of flattening.
-//
-// flatten([1,2,3]) // => [1,2,3]
-// flatten([[1,2,3],["a","b","c"],[1,2,3]])  // => [1,2,3,"a","b","c",1,2,3]
-// flatten([[[1,2,3]]]) // => [[1,2,3]]
+/*
+
+INSTRUCTION
+
+Write a function that flattens an Array of Array objects into a flat Array. Your function must only do one level of flattening.
+
+flatten([1,2,3]) // => [1,2,3]
+flatten([[1,2,3],["a","b","c"],[1,2,3]])  // => [1,2,3,"a","b","c",1,2,3]
+flatten([[[1,2,3]]]) // => [[1,2,3]]
+
+*/
 
 // SOLUTION
 
-var flatten = function(array) {
+const flatten = array => {
   const reducer = (accumulator, currentValue) =>
     accumulator.concat(currentValue);
-  let reduc = array.reduce(reducer, []);
+  const reduc = array.reduce(reducer, []);
   return reduc;
 };

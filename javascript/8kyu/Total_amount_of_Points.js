@@ -18,3 +18,23 @@ there are 10 matches in the championship
 0 <= y <= 4
 
 */
+
+// SOLUTION
+
+const points = games => {
+  let counter = 0;
+
+  let globalArray = [];
+  for (let i = 0; i < games.length; i++) {
+    globalArray.push([games[i]]);
+  }
+
+  globalArray.map(nestedArr => {
+    if (nestedArr[0][0] > nestedArr[0][2]) {
+      counter += 3;
+    } else if (nestedArr[0][0] === nestedArr[0][2]) {
+      counter += 1;
+    } else null;
+  });
+  return counter;
+};

@@ -29,3 +29,21 @@ Note:
 If you are given an array with multiple answers, return the lowest correct index.
 
 */
+
+// SOLUTION
+
+for (let position = 1; position < array.length - 1; position++) {
+  const sliceLeft = array.slice(0, position);
+  const reduceLeft = sliceLeft.reduce((a, b) => a + b);
+  console.log("reduceLeft", reduceLeft);
+
+  const sliceRight = array.slice(position + 1);
+  const reduceRight = sliceRight.reduce((a, b) => a + b);
+  console.log("reduceRight", reduceRight);
+
+  if (reduceLeft === reduceRight) {
+    console.log("yay", position);
+    return position;
+  }
+  return -1;
+}

@@ -14,3 +14,15 @@ Please, keep in mind, that JavaScript is by default sorting objects alphabetical
 http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javascript-work-well
 
 */
+
+// SOLUTION
+
+"use strict";
+
+function flattenAndSort(array) {
+  const flattened = array.reduce((acc, val) => acc.concat(val), []);
+  const sorted = flattened.sort((a, b) => {
+    return a - b;
+  });
+  return sorted;
+}

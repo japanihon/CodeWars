@@ -23,3 +23,12 @@ should return:
 The values will always be numbers, and the properties will always exist.
 
 */
+
+// SOLUTION
+
+function sortList(sortBy, list) {
+  const listing = [...list];
+  const sorted = listing.sort((a, b) => b[sortBy] - a[sortBy]);
+
+  return sorted;
+}

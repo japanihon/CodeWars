@@ -15,3 +15,17 @@ a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 */
+
+// SOLUTION
+
+const longest = (s1, s2) => {
+  const splitS1 = s1.split("");
+  const splitS2 = s2.split("");
+
+  const set = [...new Set([...splitS1, ...splitS2])];
+
+  const sort = set.sort();
+  const join = sort.join("");
+
+  return join;
+};

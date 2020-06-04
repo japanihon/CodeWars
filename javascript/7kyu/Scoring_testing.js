@@ -32,3 +32,31 @@ because:
 4*3 + 3*-1 - 3*2 = 3
 
 */
+
+// SOLUTION
+
+const scoreTest = (str, right, omit, wrong) => {
+  const rightAnswer = [];
+  const wrongAnswer = [];
+  const omitAnswer = [];
+
+  const map = str.map(num => {
+    if (num === 0) {
+      rightAnswer.push(num);
+    } else if (num === 2) {
+      wrongAnswer.push(num);
+    } else {
+      omitAnswer.push(num);
+    }
+  });
+
+  const rightLength = rightAnswer.length;
+  const wrongLength = wrongAnswer.length;
+  const omitLength = omitAnswer.length;
+
+  const rightMultiply = rightLength * right;
+  const wrongMultiply = wrongLength * wrong;
+  const omitMultiply = omitLength * omit;
+
+  return rightMultiply - wrongMultiply + omitMultiply;
+};

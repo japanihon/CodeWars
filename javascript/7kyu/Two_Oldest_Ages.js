@@ -10,3 +10,11 @@ For example:
 twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 
 */
+
+// SOLUTION
+
+const twoOldestAges = ages => {
+  const sort = ages.sort((a, b) => a - b);
+  const slice = sort.slice(-2);
+  return slice;
+};

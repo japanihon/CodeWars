@@ -11,3 +11,150 @@ Moving up one fret goes one note up on the fretboard moves one note up the scale
 We're not concerned with octaves, so just return the note as a capital letter (C#, B, D, etc.)
 
 */
+
+// SOLUTION
+
+const whatNote = (string, fret) => {
+  const notesOrderE = [
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#"
+  ];
+  const notesOrderB = [
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F"
+  ];
+  const notesOrderG = [
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#"
+  ];
+  const notesOrderD = [
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#"
+  ];
+  const notesOrderA = [
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#"
+  ];
+  const notesOrdere = [
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#"
+  ];
+
+  if (fret === 0) {
+    return string.toUpperCase();
+  }
+  if (string === "E") {
+    return notesOrderE[fret - 1];
+  }
+  if (string === "B") {
+    return notesOrderB[fret - 1];
+  }
+  if (string === "G") {
+    return notesOrderG[fret - 1];
+  }
+  if (string === "D") {
+    return notesOrderD[fret - 1];
+  }
+  if (string === "A") {
+    return notesOrderA[fret - 1];
+  }
+  if (string === "e") {
+    return notesOrdere[fret - 1];
+  }
+};

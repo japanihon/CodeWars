@@ -10,3 +10,23 @@ flatten(1, [2, 3], 4, 5, [6, [7]]) // returns [1, 2, 3, 4, 5, 6, 7]
 flatten('a', ['b', 2], 3, null, [[4], ['c']]) // returns ['a', 'b', 2, 3, null, 4, 'c']
 
 */
+
+// SOLUTION
+
+const flatten = (...n) => {
+  let result = [];
+  for (let index = 0; index < n.length; index++) {
+    if (Array.isArray(n[index])) {
+      result = result.concat(flatten(...n[index]));
+    } else {
+      result.push(n[index]);
+    }
+  }
+  return result;
+};
+
+// Great solution from codewars
+
+var flatten = function(...arr) {
+  return arr.toString().split(",");
+};

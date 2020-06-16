@@ -14,3 +14,13 @@ Your code must return true or false depending upon whether the given number is a
 Error checking for text strings or other invalid inputs is not required, only valid integers will be passed into the function.
 
 */
+
+//SOLUTION
+
+const narcissistic = value => {
+  const string = value.toString();
+  const split = string.split("");
+  const map = split.map(num => Number(num));
+  const reduce = map.reduce((acc, val) => acc + val ** map.length, 0);
+  return value === reduce;
+};

@@ -13,3 +13,13 @@ Note: if n < 0 or m < 0 return 0!
 Waiting for translations and Feedback! Thanks!
 
 */
+
+// SOLUTION
+
+const paperwork = (n, m) => {
+  if (n <= 0 || m <= 0) {
+    return 0;
+  } else {
+    return n * m;
+  }
+};

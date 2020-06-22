@@ -13,3 +13,13 @@ setalarm(false, false) -> false
 setalarm(true, false) -> true
 
 */
+
+// SOLUTION
+
+const setAlarm = (employed, vacation) => {
+  if (employed === true && vacation === false) {
+    return true;
+  } else {
+    return false;
+  }
+};

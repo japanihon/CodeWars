@@ -11,3 +11,10 @@ solve([3, 4, 4, 3, 6, 3]); // => [4, 6, 3]
 More examples can be found in the test cases.
 
 */
+
+// SOLUTION
+
+const solve = arr => {
+  let newArr = [...new Set(arr.reverse())].reverse();
+return newArr
+}

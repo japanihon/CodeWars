@@ -21,8 +21,8 @@ Good luck!
 // SOLUTION
 
 const solve = arr => {
-  const find = arr.find(elem => !arr.includes(-elem))
-  return find
+  const findUnique = arr.find(elem => !arr.includes(-elem))
+  return findUnique
 };
 
 /*

@@ -17,3 +17,28 @@ Examples:
 Good luck!
 
 */
+
+// SOLUTION
+
+const solve = arr => {
+  const find = arr.find(elem => !arr.includes(-elem))
+return find
+};
+};
+
+/*
+
+Tests
+
+describe("Basic tests", function(){
+Test.assertEquals(solve([1,-1,2,-2,3]),3);
+Test.assertEquals(solve([-3,1,2,3,-1,-4,-2]),-4);
+Test.assertEquals(solve([1,-1,2,-2,3,3]),3);
+Test.assertEquals(solve([-110,110,-38,-38,-62,62,-38,-38,-38]),-38);
+Test.assertEquals(solve([ -9,-105,-9,-9,-9,-9,105]),-9);
+Test.assertEquals(solve([ -755 ]),-755);
+Test.assertEquals(solve([ -304, -304, -304 ]),-304);
+Test.assertEquals(solve([ 17 ]),17);
+});
+
+*/

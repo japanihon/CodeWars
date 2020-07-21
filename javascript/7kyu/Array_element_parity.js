@@ -22,8 +22,7 @@ Good luck!
 
 const solve = arr => {
   const find = arr.find(elem => !arr.includes(-elem))
-return find
-};
+  return find
 };
 
 /*

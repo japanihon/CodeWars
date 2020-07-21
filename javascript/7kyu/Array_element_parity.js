@@ -20,8 +20,8 @@ Good luck!
 
 // SOLUTION
 
-const solve = arr => {
-  const findUnique = arr.find(elem => !arr.includes(-elem))
+const solve = array => {
+  const findUnique = array.find(elem => !array.includes(-elem))
   return findUnique
 };
 

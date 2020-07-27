@@ -16,3 +16,21 @@ More examples in test cases.
 Good luck!
 
 */
+
+// SOLUTION
+
+const solve = s => {
+
+  const upReg = /[A-Z]/
+  const lowerReg = /[a-z]/
+
+  const up = []
+  const low = []
+
+  for(let item = 0; item < s.length; item++){
+    if(upReg.test(s[item]) === true){ up.push(s[item])}
+    else{ low.push(s[item])}
+  }
+  if(up.length <= low.length){ return s.toLowerCase()}
+  else{ return s.toUpperCase()}
+}

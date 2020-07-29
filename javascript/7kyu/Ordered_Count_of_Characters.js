@@ -8,3 +8,11 @@ Example:
 orderedCount("abracadabra") == [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
 
 */
+
+// SOLUTION
+
+const orderedCount = text => {
+  const amountOfLetters = [...text].reduce((result, char) => ({ ...result, [char]: (result[char] || 0) + 1 }), {})
+  const uniqueLetters = [...new Set([...text])]
+  return uniqueLetters.map(letter => [letter, amountOfLetters[letter]])
+}

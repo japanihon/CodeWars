@@ -8,3 +8,9 @@ Example output:
 Hello, Mr. Spock
 
 */
+
+// SOLUTION
+
+const sayHello = name => {
+  return `Hello, ${name}`
+}

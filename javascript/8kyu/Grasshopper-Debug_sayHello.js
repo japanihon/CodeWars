@@ -14,3 +14,7 @@ Hello, Mr. Spock
 const sayHello = name => {
   return `Hello, ${name}`
 }
+
+const sayHello = name => {
+  return 'Hello' + name
+}

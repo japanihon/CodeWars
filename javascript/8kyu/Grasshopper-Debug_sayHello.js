@@ -9,12 +9,13 @@ Hello, Mr. Spock
 
 */
 
-// SOLUTION
+// SOLUTION 1
 
 const sayHello = name => {
   return `Hello, ${name}`
 }
 
+// SOLUTION 2
 const sayHello = name => {
   return 'Hello' + name
 }

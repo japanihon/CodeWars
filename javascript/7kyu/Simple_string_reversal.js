@@ -16,3 +16,11 @@ More examples in the test cases. All input will be lower case letters and in som
 Good luck!
 
 */
+
+// SOLUTION
+
+const solve = str => {
+  const split = [...str.split(` `).join(``)];
+  const replace = str.replace(/\S/g, a => split.pop());
+  return replace
+}

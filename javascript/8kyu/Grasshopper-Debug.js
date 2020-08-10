@@ -12,3 +12,16 @@ celsius = (fahrenheit - 32) * (5/9)
 Remember that typically temperatures in the current weather conditions are given in whole numbers. It is possible for temperature sensors to report temperatures with a higher accuracy such as to the nearest tenth. Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors.
 
 */
+
+// SOLUTION
+
+const weatherInfo = temp => {
+
+  const convertToCelsius = temperature => (temperature - 32) * (5 / 9)
+  const celsius = convertToCelsius(temp)
+
+  return celsius < 0
+    ? `${celsius} is freezing temperature`
+    : `${celsius} is above freezing temperature`
+
+}
